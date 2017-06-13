@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+    <RelativeLayout
+        android:id="@+id/my_pager_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/last_ic"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#121212"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/my_pager_himage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/my_pager_himage"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/my_pager_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11.1sp"
+                    android:textColor="#323232"
+                    android:layout_toRightOf="@id/my_pager_himage"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:text="浅浅"/>
+
+                <TextView
+                    android:id="@+id/my_pager_vipdengj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:textColor="#cfcfcf"
+                    android:layout_toRightOf="@id/my_pager_himage"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@id/my_pager_uname"
+                    android:layout_marginTop="10dp"
+                    android:text="普通会员"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_mydown"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/down"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_down"/>
+
+                <TextView
+                    android:text="我的下载"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/down"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_mycollect"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/collect"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_collect"/>
+
+                <TextView
+                    android:text="我的收藏"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/collect"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_myaccount"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/account"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_account"/>
+
+                <TextView
+                    android:text="账户余额"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/account"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_mychase"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/purchase"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_purchase"/>
+
+                <TextView
+
+                    android:text="购买记录"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/purchase"/>
+
+                <ImageButton
+                    android:id="@+id/jilu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+
+                <TextView
+                    android:id="@+id/my_pager_usenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#ffd300"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/jilu"
+                    android:layout_marginRight="10dp"
+                    android:text="0张可用"
+                    />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_mynews"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/news"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_news"/>
+
+                <TextView
+                    android:text="消息中心"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/news"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_myvip"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/vip"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_vip"/>
+
+                <TextView
+                    android:text="Vip专享"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/vip"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_mysetting"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_setting"/>
+
+                <TextView
+                    android:text="设置"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/setting"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#cfcfcf"></View>
+
+            <RelativeLayout
+                android:id="@+id/my_pager_myphone"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="29.3dp"
+                    android:layout_height="29.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/my_pager_phone"/>
+
+                <TextView
+                    android:text="客服电话"
+                    style="@style/my_pager_text_style"
+                    android:layout_toRightOf="@id/phone"/>
+
+                <ImageButton
+                    android:id="@+id/dianh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/stu_pager_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"/>
+
+                <TextView
+                    android:id="@+id/my_pager_kphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.7sp"
+                    android:textColor="#cfcfcf"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/dianh"
+                    android:layout_marginRight="10dp"
+                    android:text="0571-86131815"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

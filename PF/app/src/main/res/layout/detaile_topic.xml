@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+   <!-- app:contentScrim="#30469b" -->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y600"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y600">
+
+                <ImageView
+                    android:id="@+id/detaile_topic_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/home_page_content_picture_03"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y88"
+                    android:layout_marginTop="@dimen/y40"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/x45"
+                        android:layout_height="@dimen/y40"
+                        android:layout_marginLeft="@dimen/x33"
+                        android:src="@mipmap/common_left_arrow" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x49"
+                        android:layout_height="@dimen/y44"
+                        android:layout_marginRight="@dimen/x33"
+                        android:src="@mipmap/common_share" />
+                </LinearLayout>
+                --------------------------------
+
+                <TextView
+
+                    android:id="@+id/textType1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/detaile_topic_image"
+                    android:layout_marginBottom="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x67"
+                    android:text="df斯柯达将发生了会计法都是女的了"
+                    android:textSize="13.3sp" />
+                android:layout_marginLeft="@dimen/x67"
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/textType1"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:layout_marginLeft="@dimen/x67"
+                    android:text="就撒旦就撒了大v"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_scrolling" />
+
+</android.support.design.widget.CoordinatorLayout>

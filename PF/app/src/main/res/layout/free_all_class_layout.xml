@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:id="@+id/free_all_class_title"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    >
+
+        <ImageView
+            android:id="@+id/free_all_pager_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/last_ic"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#121212"
+            android:layout_centerInParent="true"
+            android:text="免费试听"
+            />
+
+    </RelativeLayout>
+
+<android.support.design.widget.TabLayout
+    android:id="@+id/free_all_class_tab"
+    android:layout_width="match_parent"
+    android:layout_height="58.7dp"
+    android:background="#ffd300">
+
+</android.support.design.widget.TabLayout>
+    
+   <android.support.v4.view.ViewPager
+       android:id="@+id/free_all_class_pager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+   </android.support.v4.view.ViewPager>
+
+</LinearLayout>

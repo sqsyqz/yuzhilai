@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/stu_pil02_iamge"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_toRightOf="@id/stu_pil02_iamge"
+    android:layout_alignTop="@id/stu_pil02_iamge"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:id="@+id/stu_pil02_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#323232"
+        android:text="连锁门课程大纲"/>
+    <TextView
+        android:id="@+id/stu_pil02_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#808080"
+        android:layout_marginTop="10dp"
+        android:text="知名美业顾问免费教你"/>
+    <TextView
+        android:id="@+id/stu_pil02_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#636363"
+        android:layout_marginTop="15dp"
+        android:text="余春华老师"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/stu_pil02_isfree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="#ffd300"
+            android:text="免费"/>
+        <TextView
+            android:id="@+id/stu_pil02_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="#bfbfbf"
+            android:text="时长.20分钟"
+            android:layout_marginLeft="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13.3dp"
+            android:background="@drawable/button_background_shape"
+            android:text="课后测试"
+            android:textColor="#ffffff"
+            android:textSize="10.7sp"
+            android:focusable="false"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

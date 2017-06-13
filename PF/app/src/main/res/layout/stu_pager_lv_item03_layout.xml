@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/stu_pil03_hiamge"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+
+    <ImageView
+        android:id="@+id/stu_pil03_iamge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/home_page_content_album"
+        android:layout_marginTop="104dp"
+        android:layout_marginLeft="114dp"
+
+        />
+
+    <TextView
+        android:id="@+id/stu_pil03_title"
+        android:text="店铺如何运营维护"
+        style="@style/stu_pager_lv_item03_title_style" />
+
+    <TextView
+        android:id="@+id/stu_pil03_info"
+        android:text="四堂课/视屏"
+        style="@style/stu_pager_lv_item03_info_style" />
+
+
+</RelativeLayout>

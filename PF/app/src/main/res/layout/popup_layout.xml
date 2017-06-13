@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="167dp"
+    android:layout_height="107dp"
+    android:background="@mipmap/qipao">
+
+    <TextView
+
+        android:id="@+id/pop_sort_shijia"
+        android:text="按上架时间"
+        style="@style/pop_text_styel"
+        android:gravity="center"/>
+
+
+   <TextView
+       android:id="@+id/pop_sort_xiaolian"
+       style="@style/pop_text_styel"
+       android:text="按七日销量"
+       />
+</LinearLayout>
